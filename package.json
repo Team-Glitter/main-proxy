@@ -8,6 +8,7 @@
     "node": ">=6.13.0"
   },
   "scripts": {
+    "proxy": "http://localhost:3000",
     "start": "nodemon ./index.js"
   },
   "dependencies": {
