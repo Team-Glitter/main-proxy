@@ -1,0 +1,182 @@
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {font-family: "Absara";
+  src: url("./fonts/6f8d072c323360c1b6eb4df582282ed5.eot"); /* IE9*/
+  src: url("./fonts/6f8d072c323360c1b6eb4df582282ed5.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("./fonts/6f8d072c323360c1b6eb4df582282ed5.woff2") format("woff2"), /* chrome、firefox */
+  url("./fonts/6f8d072c323360c1b6eb4df582282ed5.woff") format("woff"), /* chrome、firefox */
+  url("./fonts/6f8d072c323360c1b6eb4df582282ed5.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("./fonts/6f8d072c323360c1b6eb4df582282ed5.svg#AbsaraSansWeb W03 Regular") format("svg"); /* iOS 4.1- */
+}
+
+
+@font-face {font-family: 'Absara-medium';
+  src: url('./fonts1/Absara-Medium.eot');
+  src: url('./fonts1/Absara-Medium.eot?#iefix') format('embedded-opentype'),
+      url('./fonts1/Absara-Medium.woff2') format('woff2'),
+      url('./fonts1/Absara-Medium.woff') format('woff'),
+      url('./fonts1/Absara-Medium.ttf') format('truetype');
+  /* font-weight: 500; */
+  font-style: normal;
+  /* font-display: swap; */
+}
+
+@font-face {
+  font-family: 'Absara-regular';
+  src: url('./fonts2/Absara-Regular.eot');
+  src: url('./fonts2/Absara-Regular.eot?#iefix') format('embedded-opentype'),
+      url('./fonts2/Absara-Regular.woff2') format('woff2'),
+      url('./fonts2/Absara-Regular.woff') format('woff'),
+      url('./fonts2/Absara-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.demo{
+  font-family:"Absara-medium" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;}
+
+.demo{
+  font-family:'Monda', sans-serif; !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;}
+
+.title {
+  text-align: center;
+  font: 35px 'Monda', sans-serif;
+  letter-spacing: .03em;
+  line-height: 1.3em;
+  color: #6d6e71;
+  margin: 50px;
+}
+
+.related-products-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  width: calc(98.995% - 167.5px);
+  /* padding: 0px 50px;
+  margin: 0px 36px; */
+  margin: 0 auto;
+  max-width: 1160px;
+  padding: 50px 150px;
+
+}
+
+.singleProduct-container {
+  padding-right: 30px;
+  width: 270px;
+  /* align-self: stretch; */
+}
+
+.product-details {
+  padding: 25px 0 50px 0;
+}
+
+.product-details .product-name {
+  font-family: 'Monda', sans-serif;
+  font-size: 14px;
+  box-shadow: none!important;
+  color: #3f3133;
+  letter-spacing: .03em;
+  opacity: 1;
+  transition: all .15s ease-in-out;
+}
+
+.collective-prices {
+  display: flex;
+  justify-content: start;
+  font-size: 1.4em;
+  /* line-height: 16px; */
+  font-weight: 400;
+  color: #1a1a1a;
+  padding: 15px 0px;
+}
+
+
+.retail-price-sale {
+  text-decoration: line-through;
+  padding: 0px 10px;
+  font-style: italic;
+  font-family: 'Monda', sans-serif;
+  color: #8b8b8b;
+}
+
+.retail-price {
+  font-family: 'Monda', sans-serif;
+}
+
+.sale-price {
+  text-decoration: line-through;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  display: inline-block;
+  font-style: italic;
+  font-family: 'Monda', sans-serif;
+  color: #8b8b8b;
+  padding-left: 10px;
+}
+
+.retail-price-only {
+  font-family: 'Monda', sans-serif;
+  color: #8b8b8b;
+}
+.full-product-review-container {
+  display: flex;
+}
+
+.product-review {
+  color: #6d6e71!important;
+  font-size: 13px;
+  letter-spacing: .04em;
+  font-family: 'Monda', sans-serif;
+  font-weight: 400;
+  padding-left: 10px;
+}
+
+.product-star {
+  color: #f47521;
+  font-size: 13px;
+}
+
+.product-star::before {
+   content: "\2606";
+   cursor: pointer;
+}
+
+.product-star.rated::before {
+  content: "\2605";
+}
+
+.product-image {
+  display: block;
+  width: 260px;
+  height: 260px;
+}
