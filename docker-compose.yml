@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+  header:
+    build: header-service/
+    depends_on:
+      - 'database'
+    ports:
+      - '3010:3000'
+
+  main:
+    build: main-service/
+    depends_on:
+      - 'database'
+    ports:
+      - '3020:3000'
+
+  related:
+    build: relatedproducts-service/
+    depends_on:
+      - 'database'
+    ports:
+      - '3011:3000'
+
+  review:
+    build: reviews-service/
+    depends_on:
+      - 'database'
+    ports:
+      - '3030:3000'
+
+  proxy:
+    build: './'
+    depends_on:
+      - 'database'
+    ports:
+      - '3000:3000'
+
+  database:
+    image: mysql:latest
