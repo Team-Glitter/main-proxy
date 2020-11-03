@@ -46,6 +46,7 @@ div.product-gallery {
 .product-title {
   color: #f47521;
   font: 35px 'Abril Fatface', cursive;
+  padding: 30px 0px;
 }
 /* Flexbox for imageList*/
 .product-gallery_images {
@@ -107,6 +108,10 @@ button.btn {
 
 button:hover {
   opacity: 0.5;
+}
+
+img:hover {
+  opacity: 0.8;
 }
 
 input.quantity-input {
